@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
 
+import SideNav from './components/SideNav/SideNav';
+import NavBar from './components/NavBar';
+import Hero from './components/Hero/Hero';
+import Projects from './components/Projects';
+import Aos from 'aos';
+
 function App() {
+  Aos.init({ duration: 1300, delay: 100 });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <SideNav />
+      <NavBar />
+      <Hero />
+      <Projects />
     </div>
   );
 }
