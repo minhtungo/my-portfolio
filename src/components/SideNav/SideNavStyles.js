@@ -32,12 +32,12 @@ export const CustomNav = styled.nav`
   a {
     display: flex;
     align-items: center;
-    color: #45505b;
+    color: var(--light-dark);
     padding: 10px 18px;
     margin-bottom: 8px;
     font-size: 15px;
     border-radius: 50px;
-    background: #f2f3f5;
+    background: rgb(26, 26, 26);
     height: 56px;
     width: 100%;
     overflow: hidden;
@@ -49,12 +49,13 @@ export const CustomNav = styled.nav`
 
     span {
       padding: 0 5px 0 7px;
-      color: #45505b;
+      color: var(--light-dark);
     }
 
     &:hover {
       color: white;
-      background: #0563bb;
+      background: var(--blue);
+      opacity: 0.8;
       width: 100%;
 
       span {
@@ -64,13 +65,18 @@ export const CustomNav = styled.nav`
     }
   }
 
+  .active {
+    color: white !important;
+    background: var(--blue) !important;
+  }
+
   @media (min-width: 992px) {
     a {
       width: 56px;
 
       span {
         display: none;
-        color: #fff;
+        color: var(--white);
       }
     }
   }

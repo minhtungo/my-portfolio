@@ -1,19 +1,25 @@
-import './App.css';
-
 import SideNav from './components/SideNav/SideNav';
-import NavBar from './components/NavBar';
+import NavBar from './components/NavBar/NavBar';
 import Hero from './components/Hero/Hero';
-import Projects from './components/Projects';
+import About from './components/About/About';
+import Projects from './components/Projects/Projects';
+
 import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { Container } from 'react-bootstrap';
 
 function App() {
   Aos.init({ duration: 1300, delay: 100 });
   return (
     <div className='App'>
       <SideNav />
+
       <NavBar />
-      <Hero />
-      <Projects />
+      <Container>
+        <Hero />
+        <About />
+        <Projects />
+      </Container>
     </div>
   );
 }
