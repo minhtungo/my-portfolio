@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Container } from 'react-bootstrap';
 
 export const Section = styled.section`
+  padding: 0;
   width: 100%;
   height: 100vh;
   position: relative;
@@ -50,21 +51,18 @@ export const Section = styled.section`
   }
 `;
 
-export const CustomContainer = styled(Container)``;
-
 export const SocialLinks = styled.div`
   margin-top: 30px;
+`;
 
-  a {
-    font-size: 24px;
-    display: inline-block;
-    color: var(--light-dark);
-    line-height: 1;
-    margin-right: 20px;
-    transition: 0.3s;
-
-    &:hover {
-      color: var(--blue);
-    }
+export const Link = styled.a`
+  font-size: 24px;
+  display: inline-block;
+  color: var(--light-dark);
+  line-height: 1;
+  margin-right: 20px;
+  transition: 0.3s;
+  &:hover svg {
+    color: ${(props) => props.color};
   }
 `;

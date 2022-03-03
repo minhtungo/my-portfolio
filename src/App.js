@@ -4,6 +4,7 @@ import Hero from './components/Hero/Hero';
 import About from './components/About/About';
 import Timeline from './components/Timeline/Timeline';
 import Projects from './components/Projects/Projects';
+import Contact from './components/Contact/Contact';
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -20,6 +21,7 @@ function App() {
         <About />
         <Timeline />
         <Projects />
+        <Contact />
       </Container>
     </div>
   );

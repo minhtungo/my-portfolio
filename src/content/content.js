@@ -49,7 +49,7 @@ export const projects = [
     description: 'My Portfolio',
     tech: ['React', 'Styled Components', 'React Bootstrap'],
     liveURL: 'https://minhtungo.com/',
-    github: 'https://github.com/minhtungo/Pho-Chopstix',
+    github: 'https://github.com/minhtungo/my-portfolio',
     image: '/images/phochopstix.png',
   },
   {

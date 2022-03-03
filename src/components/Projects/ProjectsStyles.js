@@ -12,7 +12,7 @@ export const ProjectBox = styled.div`
 
   &:before {
     content: '';
-    background: rgba(44, 73, 100, 0.6);
+    background: var(--opacity-darker);
     position: absolute;
     left: 30px;
     right: 30px;
@@ -26,12 +26,12 @@ export const ProjectBox = styled.div`
   &:hover {
     .content {
       opacity: 1;
-      top: calc(50% - 48px);
+      top: calc(45% - 48px);
     }
 
     .links {
       opacity: 1;
-      bottom: calc(50% - 50px);
+      bottom: 8%;
     }
   }
 
@@ -63,18 +63,40 @@ export const Content = styled.div`
   p {
     color: var(--darker-white);
     font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  li {
+    font-size: var(--fz-sm);
+    margin-left: 8px;
+    padding: 1.5px 5px;
+    border-radius: 4px;
+    border: 1px solid var(--blue);
+    color: var(--blue);
+
+    &:first-child {
+      margin-left: 0;
+    }
   }
 `;
 
-export const Links = styled(Content)`
+export const Links = styled.div`
+  opacity: 0;
+  left: 0;
+  right: 0;
+  bottom: 10%;
+  text-align: center;
+  z-index: 3;
+  position: absolute;
+  transition: all ease-in-out 0.3s;
   a {
     color: var(--white);
-    margin: 0 2px;
-    font-size: 28px;
+    margin: 0 6px;
+    font-size: 20px;
     display: inline-block;
     transition: 0.3s;
 
-    &:hover {
+    &:hover svg {
       color: var(--blue);
     }
   }

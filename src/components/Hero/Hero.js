@@ -1,6 +1,6 @@
 import TypeAnimation from 'react-type-animation';
 
-import { Section, CustomContainer, SocialLinks } from './HeroStyles';
+import { Section, SocialLinks, Link } from './HeroStyles';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 const Hero = () => {
@@ -26,12 +26,15 @@ const Hero = () => {
           &lt;/p&gt;
         </p>
         <SocialLinks>
-          <a href='https://github.com/minhtungo'>
+          <Link href='https://github.com/minhtungo' color='grey'>
             <FaGithub />
-          </a>
-          <a href='https://www.linkedin.com/in/minhtu-ngo99/'>
+          </Link>
+          <Link
+            href='https://www.linkedin.com/in/minhtu-ngo99/'
+            color='rgb(10, 102, 194)'
+          >
             <FaLinkedinIn />
-          </a>
+          </Link>
         </SocialLinks>
       </div>
     </Section>
