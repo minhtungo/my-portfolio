@@ -37,7 +37,7 @@ export const CustomNav = styled.nav`
     margin-bottom: 8px;
     font-size: 15px;
     border-radius: 50px;
-    background: rgb(26, 26, 26);
+    background: var(--bg-dark);
     height: 56px;
     width: 100%;
     overflow: hidden;
@@ -68,6 +68,7 @@ export const CustomNav = styled.nav`
   .active {
     color: white !important;
     background: var(--blue) !important;
+    opacity: 0.8;
   }
 
   @media (min-width: 992px) {

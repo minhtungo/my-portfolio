@@ -65,6 +65,11 @@ export const CustomNav = styled.nav`
     }
   }
 
+  .active {
+    visibility: visible;
+    width: 80%;
+  }
+
   .resume-button {
     padding: 6px 8px;
     border-radius: 4px;

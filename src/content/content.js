@@ -5,7 +5,43 @@ export const sections = [
   { name: 'Contact' },
 ];
 
-export const about = { description: 'Hello, my name is Minh' };
+export const about = {
+  description:
+    'Hello! My name is Minh. I am in Computer Programmer Analyst at St. Lawrence College and I am graduating at the end of April 2022. I love building things for the website. I am passionate about things related to technology, especially the Web Development. Aside code, I love listening to music and play Leage of Legends. ',
+};
+
+export const experiences = [
+  {
+    position: 'Front-end Web Developer',
+    company: 'Taubyte',
+    description: [
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates temporibus vel animi corrupti dignissimos!',
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates temporibus vel animi corrupti dignissimos',
+    ],
+    time: 'Sep 2021 - Present',
+  },
+];
+
+export const educations = [
+  {
+    school: 'St. Lawrence College, Kingston, ON',
+    program: 'Computer Programmer Analyst',
+    time: 'Sep 2019 - April 2022',
+    coursework: 'MySQL, C++, Program Design, Linux, NodeJS, Web Services',
+  },
+  {
+    school: 'Udemy, Inc',
+    program: 'Web Development',
+    time: 'Present',
+    coursework: 'Python, JavaScript, React.js, Next.js',
+  },
+  {
+    school: 'University of Information Technology',
+    program: 'Information Technology',
+    time: 'August 2017 - January 2018',
+    coursework: 'Introduction to Programming(C++), Python, Calculus',
+  },
+];
 
 export const projects = [
   {

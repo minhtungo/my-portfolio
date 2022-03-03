@@ -7,6 +7,8 @@ import {
   CustomClose,
   Logo,
 } from './NavBarStyles';
+import NavLinks from './NavLinks';
+
 import { MdMenu } from 'react-icons/md';
 
 import { useState } from 'react';
@@ -20,25 +22,7 @@ const NavBar = () => {
           <a href='#home'>Minh Tu Ngo</a>
         </Logo>
         <CustomNav>
-          <ul>
-            <li>
-              <a href='#home'>Home</a>
-            </li>
-            <li>
-              <a href='#about'>About</a>
-            </li>
-            <li>
-              <a href='#projects'>Projects</a>
-            </li>
-            <li>
-              <a href='#experience'>Experience</a>
-            </li>
-            <li>
-              <a className='resume-button' href='#experience' target='_blank' rel='noopener noreferrer'>
-                Resume
-              </a>
-            </li>
-          </ul>
+          <NavLinks />
           <MdMenu
             className='mobile-nav-toggle'
             onClick={() => {
@@ -50,18 +34,7 @@ const NavBar = () => {
           <CloseWrapper>
             <CustomClose onClick={() => setBurgerStatus(false)} />
           </CloseWrapper>
-          <li>
-            <a href='#home'>Home</a>
-          </li>
-          <li>
-            <a href='#about'>About</a>
-          </li>
-          <li>
-            <a href='#projects'>Projects</a>
-          </li>
-          <li>
-            <a href='#experience'>Experience</a>
-          </li>
+          <NavLinks />
         </BurgerNav>
       </CustomContainer>
     </CustomHeader>

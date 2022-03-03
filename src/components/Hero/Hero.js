@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 const Hero = () => {
   return (
     <Section id='home' className='d-flex flex-column justify-content-center'>
-      <CustomContainer data-aos='zoom-in' className='text-lg-start'>
+      <div data-aos='zoom-in' className='text-lg-start'>
         <p className='greeting'>Hi, my name is</p>
         <h1>Minh Tu Ngo.</h1>
         <p>
@@ -33,7 +33,7 @@ const Hero = () => {
             <FaLinkedinIn />
           </a>
         </SocialLinks>
-      </CustomContainer>
+      </div>
     </Section>
   );
 };
