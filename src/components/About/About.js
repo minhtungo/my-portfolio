@@ -13,19 +13,19 @@ const About = () => {
   return (
     <Section id='about'>
       <div data-aos='fade-up'>
-        <div className='section-title'>
+        <div className='section-title py-0'>
           <h2>About</h2>
           <div className='section-line'></div>
         </div>
         <Row>
           <Col lg={4} className='pt-4 pt-lg-0'>
             <img
-              src='/images/hero-image.png'
+              src='/images/avatar.png'
               className='img-fluid'
               alt='about pic'
             />
           </Col>
-          <Col lg={8} className='pt-8 pt-lg-0 content'>
+          <Col lg={8} className='pt-8 pt-lg-5 content'>
             <h3>Front-end Developer.</h3>
             <p>{about.description}</p>
             <p>Here are some technologies I've been used:</p>

@@ -62,7 +62,7 @@ const ContactForm = () => {
           </Form.Group>
         </Col>
         <Col md={6}>
-          <Form.Group className='mt-3 mt-md-0 mb-3'>
+          <Form.Group className='mb-3'>
             <Form.Control
               type='email'
               placeholder='Your email'
@@ -73,7 +73,7 @@ const ContactForm = () => {
           </Form.Group>
         </Col>
       </Row>
-      <Form.Group className='mt-3 mt-md-0 mb-3'>
+      <Form.Group className='mb-3'>
         <Form.Control
           type='text'
           placeholder='Subject'
@@ -82,7 +82,7 @@ const ContactForm = () => {
           required
         />
       </Form.Group>
-      <Form.Group className='mt-3 mb-3'>
+      <Form.Group className='mb-3'>
         <Form.Control
           as='textarea'
           rows={3}

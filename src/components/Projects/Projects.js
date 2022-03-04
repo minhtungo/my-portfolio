@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Row, Col } from 'react-bootstrap';
+
 import { projects } from '../../content/content';
 
 import { BiLinkExternal } from 'react-icons/bi';
@@ -14,6 +15,11 @@ import {
 } from './ProjectsStyles';
 
 const Projects = () => {
+  const [showMore, setShowMore] = useState(false);
+  const LIMIT = 6;
+  const firstSix = projects.slice(0, LIMIT);
+  const projectsToShow = showMore ? projects : firstSix;
+
   return (
     <ProjectsList id='projects' data-aos='fade-up'>
       <div className='section-title'>
@@ -21,9 +27,13 @@ const Projects = () => {
         <div className='section-line'></div>
       </div>
       <Row>
-        {projects.map((project) => (
+        {projectsToShow.map((project) => (
           <Col lg={4} md={6} className='mb-3'>
-            <ProjectBox>
+            <ProjectBox
+              data-aos='zoom-in'
+              data-aos-delay='10'
+              data-aos-duration='1000'
+            >
               <img
                 src={project.image}
                 alt={project.title}
@@ -62,6 +72,11 @@ const Projects = () => {
           </Col>
         ))}
       </Row>
+      <div className='text-center mt-5'>
+        <button className='more-btn' onClick={() => setShowMore(!showMore)}>
+          Show {showMore ? 'Less' : 'More'}
+        </button>
+      </div>
     </ProjectsList>
   );
 };

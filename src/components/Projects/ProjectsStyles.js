@@ -2,6 +2,19 @@ import styled from 'styled-components';
 
 export const ProjectsList = styled.section`
   color: var(--white);
+
+  .more-btn {
+    padding: 16px 24px;
+    border-radius: 4px;
+    border: 1px solid var(--blue);
+    color: var(--blue) !important;
+    background: transparent;
+    margin: 0 auto;
+
+    &:hover {
+      background-color: rgba(5, 99, 187, 0.15);
+    }
+  }
 `;
 
 export const ProjectBox = styled.div`
@@ -89,7 +102,6 @@ export const Links = styled.div`
   z-index: 3;
   position: absolute;
   transition: all ease-in-out 0.3s;
-
 `;
 
 export const Link = styled.a`

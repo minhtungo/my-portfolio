@@ -65,6 +65,10 @@ export const CustomNav = styled.nav`
     }
   }
 
+  svg {
+    color: var(--white);
+  }
+
   .active {
     visibility: visible;
     width: 80%;
@@ -121,6 +125,7 @@ export const BurgerNav = styled.div`
   text-align: start;
   transform: ${(props) => (props.show ? 'translateX(0)' : 'translateX(100%)')};
   transition: transform 0.5s;
+  text-align: center;
   li {
     padding: 15px 0;
 
@@ -128,6 +133,10 @@ export const BurgerNav = styled.div`
       font-weight: 600;
       color: #1e1e1e;
     }
+  }
+
+  svg {
+    color: var(--white);
   }
 `;
 
