@@ -1,14 +1,9 @@
 import React from 'react';
 
-import { Section } from './AboutStyles';
+import { Section, Tech } from './AboutStyles';
 import { about } from '../../content/content';
-import {
-  FaReact,
-  FaBootstrap,
-  FaNodeJs,
-  FaHtml5,
-  FaCss3Alt,
-} from 'react-icons/fa';
+import { FaReact, FaBootstrap, FaNodeJs } from 'react-icons/fa';
+import { SiTailwindcss } from 'react-icons/si';
 import { DiJavascript1 } from 'react-icons/di';
 import { SiTypescript } from 'react-icons/si';
 
@@ -37,28 +32,28 @@ const About = () => {
             <Row>
               <Col lg={6}>
                 <ul>
-                  <li>
+                  <Tech color='rgb(97, 218, 251)'>
                     <FaReact /> <span>React</span>
-                  </li>
-                  <li>
+                  </Tech>
+                  <Tech color='rgb(252, 220, 0)'>
                     <DiJavascript1 /> <span>JavaScript (ES6+)</span>
-                  </li>
-                  <li>
+                  </Tech>
+                  <Tech color='rgb(49, 120, 198)'>
                     <SiTypescript /> <span>TypeScript</span>
-                  </li>
+                  </Tech>
                 </ul>
               </Col>
               <Col lg={6}>
                 <ul>
-                  <li>
+                  <Tech color='rgb(65, 126, 56)'>
                     <FaNodeJs /> <span>Node.js</span>
-                  </li>
-                  <li>
+                  </Tech>
+                  <Tech color='rgb(121, 82, 179)'>
                     <FaBootstrap /> <span>Bootstrap</span>
-                  </li>
-                  <li>
-                    <FaCss3Alt /> <span>CSS</span>
-                  </li>
+                  </Tech>
+                  <Tech color='rgb(34, 211, 238)'>
+                    <SiTailwindcss /> <span>Tailwind</span>
+                  </Tech>
                 </ul>
               </Col>
             </Row>

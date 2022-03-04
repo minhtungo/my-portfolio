@@ -43,6 +43,11 @@ export const educations = [
   },
 ];
 
+export const contact = {
+  phone: '+1 (613)-453-6449',
+  email: 'minhtu.ngo1999@gmail.com'
+};
+
 export const projects = [
   {
     title: 'My Portfolio',

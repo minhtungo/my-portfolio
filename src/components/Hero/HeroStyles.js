@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-import { Container } from 'react-bootstrap';
-
 export const Section = styled.section`
   padding: 0;
   width: 100%;
@@ -23,6 +21,25 @@ export const Section = styled.section`
     margin: 15px 0 0 0;
     font-size: 22px;
     font-family: 'Poppins', sans-serif;
+  }
+
+  .btn {
+    padding: 10px 18px;
+    border-radius: 4px;
+    border: 1px solid var(--blue);
+    color: var(--blue) !important;
+    margin-left: 0;
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 18px;
+
+    &:hover {
+      background-color: rgba(5, 99, 187, 0.15);
+    }
+
+    &:hover:before {
+      visibility: hidden;
+    }
   }
 
   .greeting {

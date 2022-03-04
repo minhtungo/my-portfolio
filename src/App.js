@@ -9,6 +9,7 @@ import Contact from './components/Contact/Contact';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { Container } from 'react-bootstrap';
+import Footer from './components/Footer/Footer';
 
 function App() {
   Aos.init({ duration: 1000, delay: 50 });
@@ -23,6 +24,7 @@ function App() {
         <Projects />
         <Contact />
       </Container>
+      <Footer />
     </div>
   );
 }

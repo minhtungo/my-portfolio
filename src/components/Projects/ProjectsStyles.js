@@ -72,7 +72,7 @@ export const Content = styled.div`
     padding: 1.5px 5px;
     border-radius: 4px;
     border: 1px solid var(--blue);
-    color: var(--blue);
+    color: var(--darker-white);
 
     &:first-child {
       margin-left: 0;
@@ -91,7 +91,7 @@ export const Links = styled.div`
   transition: all ease-in-out 0.3s;
   a {
     color: var(--white);
-    margin: 0 6px;
+    margin: 0 15px;
     font-size: 20px;
     display: inline-block;
     transition: 0.3s;

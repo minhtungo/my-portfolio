@@ -36,6 +36,9 @@ const Hero = () => {
             <FaLinkedinIn />
           </Link>
         </SocialLinks>
+        <a className='btn' href='#contact'>
+          Say Hello
+        </a>
       </div>
     </Section>
   );

@@ -1,4 +1,4 @@
-import { BiHome, BiCode, BiMessageDetail } from 'react-icons/bi';
+import { BiHome, BiCodeAlt, BiMessageDetail } from 'react-icons/bi';
 import { RiTimeLine } from 'react-icons/ri';
 import { MdPersonOutline } from 'react-icons/md';
 
@@ -36,7 +36,7 @@ const SideNav = () => {
             </li>
             <li>
               <a href='#projects'>
-                <BiCode />
+                <BiCodeAlt />
                 <span>Projects</span>
               </a>
             </li>

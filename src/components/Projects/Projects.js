@@ -8,7 +8,7 @@ import { ProjectsList, ProjectBox, Content, Links } from './ProjectsStyles';
 
 const Projects = () => {
   return (
-    <ProjectsList id='projects'>
+    <ProjectsList id='projects' data-aos='fade-up'>
       <div className='section-title'>
         <h2>Projects</h2>
         <div className='section-line'></div>
