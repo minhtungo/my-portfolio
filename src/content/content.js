@@ -33,10 +33,10 @@ export const educations = [
     school: 'Udemy, Inc',
     program: 'Web Development',
     time: 'Present',
-    coursework: 'Python, JavaScript, React.js, Next.js',
+    coursework: 'Python, JavaScript, React.js, Next.js, Website Development',
   },
   {
-    school: 'University of Information Technology',
+    school: 'University of Information Technology, Viet Nam',
     program: 'Information Technology',
     time: 'August 2017 - January 2018',
     coursework: 'Introduction to Programming(C++), Python, Calculus',
@@ -59,7 +59,7 @@ export const projects = [
   },
   {
     title: 'Pho Chopstix',
-    description: 'Restaurant',
+    description: 'Built a responsive website for a local restaurant.',
     tech: ['React', 'Styled Components', 'React Bootstrap'],
     liveURL: 'https://phochopstix.ca/',
     github: 'https://github.com/minhtungo/Pho-Chopstix',
@@ -67,7 +67,7 @@ export const projects = [
   },
   {
     title: 'Calculator',
-    description: 'Calculator',
+    description: 'Built a simple calculator using React.js',
     tech: ['React'],
     liveURL: 'https://minhcalculator.netlify.app/',
     github: 'https://github.com/minhtungo/calculator-react-app',
@@ -75,7 +75,7 @@ export const projects = [
   },
   {
     title: 'Wordle clone',
-    description: 'Wordle',
+    description: 'Clone the Wordle game using JavaScript',
     tech: ['HTML', 'CSS', 'JavaScript'],
     liveURL: 'https://worldleclone.netlify.app/',
     github: 'https://github.com/minhtungo/Wordle-Game-Clone',

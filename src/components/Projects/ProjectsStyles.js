@@ -89,15 +89,17 @@ export const Links = styled.div`
   z-index: 3;
   position: absolute;
   transition: all ease-in-out 0.3s;
-  a {
-    color: var(--white);
-    margin: 0 15px;
-    font-size: 20px;
-    display: inline-block;
-    transition: 0.3s;
 
-    &:hover svg {
-      color: var(--blue);
-    }
+`;
+
+export const Link = styled.a`
+  color: var(--white);
+  margin: 0 15px;
+  font-size: 22px;
+  display: inline-block;
+  transition: 0.3s;
+
+  &:hover svg {
+    color: ${(props) => props.color};
   }
 `;

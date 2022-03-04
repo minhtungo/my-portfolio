@@ -2,9 +2,16 @@ import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import { projects } from '../../content/content';
 
-import { BiCodeAlt, BiLinkExternal } from 'react-icons/bi';
+import { BiLinkExternal } from 'react-icons/bi';
+import { FaGithub } from 'react-icons/fa';
 
-import { ProjectsList, ProjectBox, Content, Links } from './ProjectsStyles';
+import {
+  ProjectsList,
+  ProjectBox,
+  Content,
+  Links,
+  Link,
+} from './ProjectsStyles';
 
 const Projects = () => {
   return (
@@ -34,12 +41,22 @@ const Projects = () => {
                 )}
               </Content>
               <Links className='links'>
-                <a href={project.liveURL} target='_blank' rel='noreferrer'>
+                <Link
+                  href={project.liveURL}
+                  target='_blank'
+                  rel='noreferrer'
+                  color='rgb(10, 102, 194)'
+                >
                   <BiLinkExternal />
-                </a>
-                <a href={project.github} target='_blank' rel='noreferrer'>
-                  <BiCodeAlt />
-                </a>
+                </Link>
+                <Link
+                  href={project.github}
+                  target='_blank'
+                  rel='noreferrer'
+                  color='grey'
+                >
+                  <FaGithub />
+                </Link>
               </Links>
             </ProjectBox>
           </Col>

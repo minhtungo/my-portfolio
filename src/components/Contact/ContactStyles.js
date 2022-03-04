@@ -43,7 +43,7 @@ export const Info = styled.div`
 export const Item = styled.div`
   margin-top: 40px;
 
-  a{
+  a {
     &:hover p {
       color: var(--blue);
     }
@@ -72,6 +72,11 @@ export const CustomForm = styled(Form)`
       color: var(--white);
       background: var(--opacity-dark);
     }
+  }
+
+  .errorMessage {
+    font-size: var(--fz-sm);
+    color: #dc3545;
   }
 `;
 

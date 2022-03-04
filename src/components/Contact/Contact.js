@@ -11,6 +11,8 @@ import ContactForm from './ContactForm';
 
 import { contact } from '../../content/content';
 
+import { ToastContainer } from 'react-toastify';
+
 const Contact = () => {
   return (
     <Section id='contact' data-aos='fade-up'>
@@ -42,6 +44,7 @@ const Contact = () => {
           <ContactForm />
         </Col>
       </Row>
+      <ToastContainer />
     </Section>
   );
 };
