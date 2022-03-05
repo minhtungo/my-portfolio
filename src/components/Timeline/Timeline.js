@@ -13,18 +13,18 @@ const Education = () => {
         <div className='section-line'></div>
       </div>
       <Row>
-        <Col lg={6}>
+        <Col lg={6} data-aos='zoom-in'>
           <Title>Education</Title>
           {educations.map((education) => (
             <Item>
               <h4>{education.program}</h4>
               <h5>{education.time}</h5>
               <p>{education.school}</p>
-              <p>Coursework: {education.coursework}</p>
+              <p>{education.coursework}</p>
             </Item>
           ))}
         </Col>
-        <Col lg={6}>
+        <Col lg={6} data-aos='zoom-in'>
           <Title>Experience</Title>
           {experiences.map((job) => (
             <Item>

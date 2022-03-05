@@ -5,7 +5,7 @@ export const Section = styled.section`
   width: 100%;
   height: 100vh;
   position: relative;
-  background: url('/images/hero-image.png') center right no-repeat;
+  background: url('/images/hero.png') center right no-repeat;
   background-size: 450px 300px;
 
   h1 {

@@ -23,8 +23,8 @@ const About = () => {
               alt='about pic'
             />
           </Col>
-          <Col lg={8} className='pt-8 pt-lg-5 content'>
-            <h3 className='mt-0 mt-sm-3'>Front-end Developer.</h3>
+          <Col lg={8} className='pt-8 pt-lg-4 content'>
+            <h3 className='mt-md-0 mt-3'>Front-end Developer.</h3>
             {about.description.map((description) => (
               <p>{description}</p>
             ))}

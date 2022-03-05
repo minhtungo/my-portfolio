@@ -14,11 +14,13 @@
   --dark: rgba(26, 26, 26, 0.8);
   --opacity-dark: rgba(26, 26, 26, 0.4);
   --opacity-darker: rgba(0, 0, 0, 0.7);
+  --opacity-dark-bg:rgba(13, 13, 13, 0.85);
   --bg-dark: rgb(26, 26, 26);
   --light-dark: rgb(69, 80, 91);
   --white: rgb(242, 242, 242);
   --darker-white: rgb(217, 217, 217);
   --blue: rgb(5, 99, 187);
+  --darker-blue: rgb(4, 79, 149);
   --blue-opacity: rgba(5, 99, 187, 0.15);
   --light-slate: rgb(168, 178, 209) --lightest-slate:rgb(204, 214, 246);
   --lightest-slate: #ccd6f6;

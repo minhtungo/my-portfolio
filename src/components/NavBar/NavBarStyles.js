@@ -21,13 +21,15 @@ export const CustomNavbar = styled(Navbar)`
     }
   }
   .resume-button {
-    padding: 6px 8px !important;
+    padding: 8px 12px !important;
     border-radius: 4px;
-    border: 1px solid var(--blue);
-    color: var(--blue) !important;
+    border: none;
+    color: var(--white) !important;
+    background-color: var(--blue);
+    margin-left: 30px;
 
     &:hover {
-      background-color: var(--blue-opacity);
+      background-color: var(--darker-blue);
     }
 
     &:hover:before {

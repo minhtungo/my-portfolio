@@ -8,18 +8,19 @@ export const sections = [
 
 export const about = {
   description: [
-    'Hello! My name is Minh. I am in Computer Programmer Analyst at St. Lawrence College and I am graduating at the end of April 2022. I love building things for the website. I am passionate about things related to technology, especially the Web Development.',
-    'I love the opportunity to learn and work alongside other like-minded professionals who are all collaborating to build the best website and software possible that meets the ever-changing needs of the end-user.',
+    'Hello! My name is Minh. I am currently in Computer Programmer Analyst program at St. Lawrence College and I am graduating at the end of April 2022. I am passionate about things related to technology, especially the Web Development.',
+    'I would love the opportunity to learn and work alongside other like-minded professionals who are all collaborating to build the best website and software possible that meets the ever-changing needs of the end-user.',
   ],
 };
 
 export const experiences = [
   {
-    position: 'Front-end Web Developer',
+    position: 'Front-end Web Developer Intern',
     company: 'Taubyte | Remote',
     description: [
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates temporibus vel animi corrupti dignissimos!',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates temporibus vel animi corrupti dignissimos',
+      'Develop Taubyte website frontend using HTML/CSS/JS and Vue.js',
+      'Fix current layout bugs to improve user experience',
+      'Use Jira and Bitbucket to efficiently collaborate with other developers and track bugs',
     ],
     time: 'Sep 2021 - Present',
   },
@@ -30,19 +31,22 @@ export const educations = [
     school: 'St. Lawrence College | Kingston, ON',
     program: 'Computer Programmer Analyst',
     time: 'Sep 2019 - April 2022',
-    coursework: 'MySQL, C++, Program Design, Linux, NodeJS, Web Services',
+    coursework:
+      'Relevant Coursework: MySQL, C++, Program Design, Linux, NodeJS, Web Services',
   },
   {
     school: 'Udemy, Inc | Online',
     program: 'Web Development',
     time: 'Present',
-    coursework: 'Python, JavaScript, React.js, Next.js, Website Development',
+    coursework:
+      'Courses: Python, JavaScript, React.js, Next.js, Website Development',
   },
   {
     school: 'University of Information Technology | Viet Nam',
     program: 'Information Technology',
     time: 'August 2017 - January 2018',
-    coursework: 'Introduction to Programming(C++), Python, Calculus',
+    coursework:
+      'Relevant Coursework: Introduction to Programming(C++), Python, Calculus',
   },
 ];
 
@@ -59,6 +63,14 @@ export const projects = [
     liveURL: 'https://minh-chat-app.netlify.app/',
     github: 'https://github.com/minhtungo/realtime-chat-app',
     image: '/images/realtime-chat.png',
+  },
+  {
+    title: 'Cooking Recipe app',
+    description: 'A small app to add/save/edit your secret cooking recipe',
+    tech: ['React', 'Firebase'],
+    liveURL: 'https://minh-cooking-recipe.netlify.app',
+    github: 'https://github.com/minhtungo/cooking-recipe',
+    image: '/images/cooking-app.png',
   },
   {
     title: 'Calculator',

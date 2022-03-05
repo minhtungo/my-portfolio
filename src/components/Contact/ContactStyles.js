@@ -89,6 +89,6 @@ export const CustomButton = styled(Button)`
   border-radius: 50px;
 
   &:hover {
-    background: rgb(4, 79, 149);
+    background: var(--darker-blue);
   }
 `;
