@@ -6,7 +6,7 @@ export const Section = styled.section`
   height: 100vh;
   position: relative;
   background: url('/images/hero-image.png') center right no-repeat;
-  background-size: 400px 400px;
+  background-size: 450px 300px;
 
   h1 {
     margin: 0;
@@ -34,7 +34,7 @@ export const Section = styled.section`
     font-size: 18px;
 
     &:hover {
-      background-color: rgba(5, 99, 187, 0.15);
+      background-color: var(--blue-opacity);
     }
 
     &:hover:before {
@@ -48,12 +48,10 @@ export const Section = styled.section`
     font-size: 16px;
   }
 
-  @media (min-width: 992px) {
-    ${'' /* padding-left: 160px; */}
-  }
-
   @media (max-width: 992px) {
     text-align: center;
+    background: url('/images/mobile-hero-image.png') center right no-repeat;
+    background-size: 450px 300px;
 
     h1 {
       font-size: 32px;
@@ -64,6 +62,16 @@ export const Section = styled.section`
       margin-top: 10px;
       font-size: 18px;
       line-height: 24px;
+    }
+
+    .btn {
+      color: var(--white) !important;
+      border: none;
+      background-color: var(--blue);
+
+      &:hover {
+        background-color: rgb(7, 93, 173);
+      }
     }
   }
 `;

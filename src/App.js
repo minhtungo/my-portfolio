@@ -18,6 +18,7 @@ function App() {
     <div className='App'>
       <SideNav />
       <NavBar />
+
       <Container>
         <Hero />
         <About />

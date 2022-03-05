@@ -12,7 +12,7 @@ export const ProjectsList = styled.section`
     margin: 0 auto;
 
     &:hover {
-      background-color: rgba(5, 99, 187, 0.15);
+      background-color: var(--blue-opacity);
     }
   }
 `;

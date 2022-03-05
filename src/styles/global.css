@@ -19,6 +19,7 @@
   --white: rgb(242, 242, 242);
   --darker-white: rgb(217, 217, 217);
   --blue: rgb(5, 99, 187);
+  --blue-opacity: rgba(5, 99, 187, 0.15);
   --light-slate: rgb(168, 178, 209) --lightest-slate:rgb(204, 214, 246);
   --lightest-slate: #ccd6f6;
   --light-navy: #112240;

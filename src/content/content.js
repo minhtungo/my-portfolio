@@ -1,19 +1,22 @@
 export const sections = [
-  { name: 'About' },
-  { name: 'Experience' },
-  { name: 'Projects' },
-  { name: 'Contact' },
+  { title: 'Home', href: '#home' },
+  { title: 'About', href: '#about' },
+  { title: 'Timeline', href: '#timeline' },
+  { title: 'Projects', href: '#projects' },
+  { title: 'Contact', href: '#contact' },
 ];
 
 export const about = {
-  description:
-    'Hello! My name is Minh. I am in Computer Programmer Analyst at St. Lawrence College and I am graduating at the end of April 2022. I love building things for the website. I am passionate about things related to technology, especially the Web Development. Aside code, I enjoy listening to music and play League of Legends. ',
+  description: [
+    'Hello! My name is Minh. I am in Computer Programmer Analyst at St. Lawrence College and I am graduating at the end of April 2022. I love building things for the website. I am passionate about things related to technology, especially the Web Development.',
+    'I love the opportunity to learn and work alongside other like-minded professionals who are all collaborating to build the best website and software possible that meets the ever-changing needs of the end-user.',
+  ],
 };
 
 export const experiences = [
   {
     position: 'Front-end Web Developer',
-    company: 'Taubyte',
+    company: 'Taubyte | Remote',
     description: [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates temporibus vel animi corrupti dignissimos!',
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates temporibus vel animi corrupti dignissimos',
@@ -24,19 +27,19 @@ export const experiences = [
 
 export const educations = [
   {
-    school: 'St. Lawrence College, Kingston, ON',
+    school: 'St. Lawrence College | Kingston, ON',
     program: 'Computer Programmer Analyst',
     time: 'Sep 2019 - April 2022',
     coursework: 'MySQL, C++, Program Design, Linux, NodeJS, Web Services',
   },
   {
-    school: 'Udemy, Inc',
+    school: 'Udemy, Inc | Online',
     program: 'Web Development',
     time: 'Present',
     coursework: 'Python, JavaScript, React.js, Next.js, Website Development',
   },
   {
-    school: 'University of Information Technology, Viet Nam',
+    school: 'University of Information Technology | Viet Nam',
     program: 'Information Technology',
     time: 'August 2017 - January 2018',
     coursework: 'Introduction to Programming(C++), Python, Calculus',
@@ -51,11 +54,11 @@ export const contact = {
 export const projects = [
   {
     title: 'Real Time Chat app',
-    description: 'My Portfolio',
+    description: 'A small chat room application',
     tech: ['React', 'Node.js', 'Socket.io'],
-    liveURL: 'https://minhtungo.com/',
-    github: 'https://github.com/minhtungo/my-portfolio',
-    image: '/images/my-porfolio.png',
+    liveURL: 'https://minh-chat-app.netlify.app/',
+    github: 'https://github.com/minhtungo/realtime-chat-app',
+    image: '/images/realtime-chat.png',
   },
   {
     title: 'Calculator',
@@ -77,15 +80,15 @@ export const projects = [
     title: 'Tesla Landing Page Clone',
     description: 'Clone Tesla landing page',
     tech: ['React', 'Styled Components'],
-    liveURL: 'https://tesla-clone1608.netlify.app/',
+    liveURL: 'https://minh-tesla-clone.netlify.app',
     github: 'https://github.com/minhtungo/Tesla-Landing-Page-clone',
     image: '/images/tesla-clone.png',
   },
   {
     title: 'Matching game',
-    description: 'Clone Tesla landing page',
+    description: 'A simple memory game built with React',
     tech: ['React', 'Styled Components'],
-    liveURL: 'https://memorygame-1608.netlify.app/',
+    liveURL: 'https://minh-memory-game.netlify.app',
     github: 'https://github.com/minhtungo/matching-game',
     image: '/images/memory-game.png',
   },
@@ -100,9 +103,9 @@ export const projects = [
 
   {
     title: 'Wordle clone',
-    description: 'Clone the Wordle game using JavaScript',
+    description: 'Clone the Wordle game built with JavaScript',
     tech: ['HTML', 'CSS', 'JavaScript'],
-    liveURL: 'https://worldleclone.netlify.app/',
+    liveURL: 'https://minh-worldle-clone.netlify.app',
     github: 'https://github.com/minhtungo/Wordle-Game-Clone',
     image: '/images/wordle.png',
   },
@@ -110,7 +113,7 @@ export const projects = [
     title: 'Todo List app',
     description: 'A simple todo app to learn TypeScript',
     tech: ['React', 'TypeScript'],
-    liveURL: 'https://todo-typescript-1608.netlify.app/',
+    liveURL: 'https://minh-todo-ts.netlify.app',
     github: 'https://github.com/minhtungo/Todo-app',
     image: '/images/todo-ts.png',
   },

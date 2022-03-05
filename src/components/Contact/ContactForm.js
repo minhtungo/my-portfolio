@@ -93,7 +93,7 @@ const ContactForm = () => {
         />
       </Form.Group>
       <div className='text-center'>
-        <CustomButton variant='primary' type='submit'>
+        <CustomButton variant='primary' type='submit' disabled={isSending}>
           {isSending ? (
             <>
               <Spinner

@@ -10,7 +10,11 @@ export const CustomContainer = styled.section`
   padding: 15px;
   overflow-y: auto;
 
-  @media (max-width: 992px) {
+  .styles_scroll-to-top__2A70v {
+    border-radius: 50%;
+    background-color: var(--blue);
+  }
+  @media (max-width: 1090px) {
     transform: translateX(-100%);
   }
 `;
@@ -65,13 +69,13 @@ export const CustomNav = styled.nav`
     }
   }
 
-  .active {
+  .activeNav {
     color: white !important;
     background: var(--blue) !important;
     opacity: 0.8;
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: 1090px) {
     a {
       width: 56px;
 
