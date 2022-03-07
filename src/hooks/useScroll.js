@@ -1,4 +1,4 @@
-import { createContext, useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function useScroll() {
   const [data, setData] = useState({
@@ -31,5 +31,3 @@ export default function useScroll() {
 
   return data;
 }
-
-export const ScrollContext = createContext(null);

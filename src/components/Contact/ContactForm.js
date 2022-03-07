@@ -1,11 +1,9 @@
 import { useState } from 'react';
 
+import useForm from '../../hooks/useForm';
 import { CustomForm, CustomButton } from './ContactStyles';
-import { toastifySuccess } from './ToastMessage';
 
 import { Row, Col, Form, Spinner } from 'react-bootstrap';
-
-import emailjs from 'emailjs-com';
 
 const ContactForm = () => {
   const [name, setName] = useState('');
@@ -13,7 +11,7 @@ const ContactForm = () => {
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
 
-  const [isSending, setIsSending] = useState(false);
+  const { isSending, handleSubmit } = useForm();
 
   const reset = () => {
     setName('');
@@ -22,33 +20,12 @@ const ContactForm = () => {
     setMessage('');
   };
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    try {
-      setIsSending(true);
-      const templateParams = {
-        name,
-        email,
-        subject,
-        message,
-      };
-      await emailjs.send(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
-        templateParams,
-        process.env.REACT_APP_USER_ID
-      );
-      reset();
-      setIsSending(false);
-      toastifySuccess();
-    } catch (e) {
-      setIsSending(false);
-      console.log(e);
-    }
-  };
-
   return (
-    <CustomForm onSubmit={handleSubmit}>
+    <CustomForm
+      onSubmit={(event) =>
+        handleSubmit(event, name, email, subject, message, reset)
+      }
+    >
       <Row>
         <Col md={6}>
           <Form.Group className='mb-3'>
@@ -102,8 +79,8 @@ const ContactForm = () => {
                 size='sm'
                 role='status'
                 aria-hidden='true'
-              />
-              <span className='visually-hidden'>Loading...</span>
+              /> Sending...
+              <span className='visually-hidden'>Sending...</span>
             </>
           ) : (
             'Send Message'

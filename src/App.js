@@ -22,8 +22,8 @@ function App() {
       <Container>
         <Hero />
         <About />
-        <Timeline />
         <Projects />
+        <Timeline />
         <Contact />
       </Container>
       <Footer />

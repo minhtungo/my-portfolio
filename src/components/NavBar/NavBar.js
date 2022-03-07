@@ -57,7 +57,7 @@ const NavBar = () => {
             )}
             <CustomLink
               className='resume-button'
-              href='/resume.pdf'
+              href='/my-resume.pdf'
               target='_blank'
               rel='noopener noreferrer'
             >

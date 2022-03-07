@@ -2,6 +2,7 @@ import TypeAnimation from 'react-type-animation';
 
 import { Section, SocialLinks, Link } from './HeroStyles';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import DownArrow from './DownArrow';
 
 const Hero = () => {
   return (
@@ -40,6 +41,7 @@ const Hero = () => {
           Say Hello
         </a>
       </div>
+      <DownArrow />
     </Section>
   );
 };

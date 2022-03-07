@@ -30,15 +30,15 @@ const SideNav = () => {
               </a>
             </li>
             <li>
-              <a href='#timeline'>
-                <RiTimeLine />
-                <span>Timeline</span>
-              </a>
-            </li>
-            <li>
               <a href='#projects'>
                 <BiCodeAlt />
                 <span>Projects</span>
+              </a>
+            </li>
+            <li>
+              <a href='#timeline'>
+                <RiTimeLine />
+                <span>Timeline</span>
               </a>
             </li>
             <li>

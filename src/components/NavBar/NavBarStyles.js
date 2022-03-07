@@ -28,6 +28,10 @@ export const CustomNavbar = styled(Navbar)`
     background-color: var(--blue);
     margin-left: 30px;
 
+    @media (max-width: 992px) {
+      margin-left: 12px;
+    }
+
     &:hover {
       background-color: var(--darker-blue);
     }

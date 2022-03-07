@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 export const ProjectsList = styled.section`
-  color: var(--white);
-
   .more-btn {
     padding: 16px 24px;
     border-radius: 4px;
@@ -22,6 +20,10 @@ export const ProjectBox = styled.div`
   position: relative;
   overflow: hidden;
   z-index: 1;
+
+  img {
+    border-radius: 3px;
+  }
 
   &:before {
     content: '';
@@ -44,7 +46,7 @@ export const ProjectBox = styled.div`
 
     .links {
       opacity: 1;
-      bottom: 8%;
+      bottom: calc(50% - 90px);
     }
   }
 
@@ -54,6 +56,25 @@ export const ProjectBox = styled.div`
     right: 0;
     bottom: 0;
     opacity: 1;
+  }
+
+  @media (max-width: 992px) {
+    &:before {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 1;
+    }
+    .content {
+      opacity: 1;
+      top: calc(45% - 48px);
+    }
+
+    .links {
+      opacity: 1;
+      bottom: calc(50% - 90px);
+    }
   }
 `;
 

@@ -34,7 +34,7 @@ const TechList = () => {
             <FaBootstrap /> <span>Bootstrap</span>
           </Tech>
           <Tech color='rgb(34, 211, 238)'>
-            <SiTailwindcss /> <span>Tailwind</span>
+            <SiTailwindcss /> <span>TailwindCSS</span>
           </Tech>
         </ul>
       </Col>
