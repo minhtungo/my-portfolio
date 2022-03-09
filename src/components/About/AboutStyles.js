@@ -33,6 +33,10 @@ export const Section = styled.section`
   }
 `;
 
+export const Course = styled.span`
+
+`;
+
 export const Tech = styled.li`
   margin-bottom: 20px;
   display: flex;

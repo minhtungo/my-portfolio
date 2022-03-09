@@ -39,7 +39,25 @@ export const educations = [
     program: 'Web Development',
     time: 'Present',
     coursework:
-      'Completed courses: Python, JavaScript, React.js, Next.js, Website Development.',
+      'Completed courses: Python, JavaScript, React.js, Website Development.',
+    course: [
+      {
+        name: 'JavaScript',
+        url: 'https://www.udemy.com/certificate/UC-601a7828-0855-4603-8cfa-0efb05b791dd/',
+      },
+      {
+        name: 'React',
+        url: 'https://www.udemy.com/certificate/UC-3283f98d-3117-4897-8468-5703b33aae1e/',
+      },
+      {
+        name: 'Web Development',
+        url: 'hhttps://www.udemy.com/certificate/UC-3ab6d5f2-e2ac-400c-ae65-a5e040df9053/',
+      },
+      {
+        name: 'Python',
+        url: 'https://www.udemy.com/certificate/UC-9b0dbc6e-c1b1-4620-aace-85ceed2608e1/',
+      },
+    ],
   },
   {
     school: 'University of Information Technology | Viet Nam',

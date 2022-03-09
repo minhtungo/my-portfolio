@@ -21,6 +21,7 @@ const Education = () => {
               <h5>{education.time}</h5>
               <p>{education.school}</p>
               <p>{education.coursework}</p>
+              
             </Item>
           ))}
         </Col>
