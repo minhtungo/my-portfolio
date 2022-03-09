@@ -16,7 +16,7 @@ const Education = () => {
         <Col lg={6} data-aos='zoom-in'>
           <Title>Education</Title>
           {educations.map((education) => (
-            <Item>
+            <Item key={education.program}>
               <h4>{education.program}</h4>
               <h5>{education.time}</h5>
               <p>{education.school}</p>
@@ -27,13 +27,13 @@ const Education = () => {
         <Col lg={6} data-aos='zoom-in'>
           <Title>Experience</Title>
           {experiences.map((job) => (
-            <Item>
+            <Item key={job.company}>
               <h4>{job.position}</h4>
               <h5>{job.time}</h5>
               <p>{job.company}</p>
               <ul>
                 {job.description.map((bullet) => (
-                  <li>
+                  <li key={bullet}>
                     <BiChevronRight />
                     {bullet}
                   </li>

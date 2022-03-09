@@ -21,15 +21,19 @@ const Projects = () => {
   const projectsToShow = showMore ? projects : firstSix;
 
   return (
-    <ProjectsList id='projects'>
+    <ProjectsList id='projects' data-aos='fade-up'>
       <div className='section-title'>
         <h2>Projects</h2>
         <div className='section-line'></div>
       </div>
       <Row>
         {projectsToShow.map((project) => (
-          <Col lg={6} xl={4} className='my-md-2 my-lg-1 px-1'>
-            <ProjectBox>
+          <Col lg={6} xl={4} className='my-2 my-lg-1 px-1' key={project.title}>
+            <ProjectBox
+              data-aos='zoom-in'
+              data-aos-delay='10'
+              data-aos-duration='1000'
+            >
               <img
                 src={project.image}
                 alt={project.title}

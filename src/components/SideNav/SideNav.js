@@ -12,7 +12,7 @@ const SideNav = () => {
     <CustomContainer className='d-flex flex-column justify-content-center'>
       <CustomNav>
         <ScrollspyNav
-          scrollTargetIds={['home', 'about', 'timeline', 'projects', 'contact']}
+          scrollTargetIds={['home', 'about', 'projects', 'timeline', 'contact']}
           activeNavClass='activeNav'
           scrollDuration='50'
         >

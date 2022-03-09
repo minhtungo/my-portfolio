@@ -10,6 +10,7 @@ export const CustomNavbar = styled(Navbar)`
   svg {
     height: 28px;
     width: 28px;
+    color: var(--white);
   }
 
   .navbar-toggler {
