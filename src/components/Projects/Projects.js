@@ -51,22 +51,26 @@ const Projects = () => {
                 )}
               </Content>
               <Links className='links'>
-                <Link
-                  href={project.liveURL}
-                  target='_blank'
-                  rel='noreferrer'
-                  color='rgb(10, 102, 194)'
-                >
-                  <BiLinkExternal />
-                </Link>
-                <Link
-                  href={project.github}
-                  target='_blank'
-                  rel='noreferrer'
-                  color='grey'
-                >
-                  <FaGithub />
-                </Link>
+                {project.liveURL && (
+                  <Link
+                    href={project.liveURL}
+                    target='_blank'
+                    rel='noreferrer'
+                    color='rgb(10, 102, 194)'
+                  >
+                    <BiLinkExternal />
+                  </Link>
+                )}
+                {project.liveURL && (
+                  <Link
+                    href={project.github}
+                    target='_blank'
+                    rel='noreferrer'
+                    color='grey'
+                  >
+                    <FaGithub />
+                  </Link>
+                )}
               </Links>
             </ProjectBox>
           </Col>

@@ -73,6 +73,14 @@ export const projects = [
     image: '/images/cooking-app.png',
   },
   {
+    title: 'My Blog',
+    description: 'A small blog app built with Next.js, Sanity.',
+    tech: ['React', 'Next', 'Sanity', 'TypeScript'],
+    liveURL: 'https://my-small-blog.vercel.app/',
+    github: 'https://github.com/minhtungo/my-small-blog',
+    image: '/images/blog.png',
+  },
+  {
     title: 'Calculator',
     description: 'Built a simple calculator using React.js.',
     tech: ['React'],
@@ -128,5 +136,13 @@ export const projects = [
     liveURL: 'https://minh-todo-ts.netlify.app',
     github: 'https://github.com/minhtungo/Todo-app',
     image: '/images/todo-ts.png',
+  },
+  {
+    title: 'Weather app',
+    description: 'A simple weather app using Weatherstack API.',
+    tech: ['JavaScript', 'HTML', 'CSS'],
+    liveURL: 'https://minh-weather-application.herokuapp.com/',
+    github: 'https://github.com/minhtungo/Weather-App',
+    image: '/images/weather.png',
   },
 ];
